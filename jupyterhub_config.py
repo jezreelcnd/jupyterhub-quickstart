@@ -191,6 +191,7 @@ else:
     c.JupyterHub.db_url = '/opt/app-root/data/database.sqlite'
 
 c.JupyterHub.authenticator_class = 'nativeauthenticator.NativeAuthenticator'
+c.Authenticator.admin_users = { 'jezreelcn' }
 
 c.JupyterHub.spawner_class = 'kubespawner.KubeSpawner'
 
